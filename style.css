@@ -1,28 +1,22 @@
-
 body {
   margin: 0;
   font-family: "Segoe UI", Arial, sans-serif;
-  background: #000000;
-  color: #e5e5e5;
+  background: #000;
+  color: #e5e7eb;
   text-align: center;
 }
 
 /* HERO */
 .hero {
   padding: 90px 20px;
-  background: linear-gradient(135deg, #000000, #111827);
-  color: #facc15; /* gold */
-}
-
-.hero h1 {
-  font-size: 2.8rem;
-  margin-bottom: 10px;
+  background: linear-gradient(135deg, #000, #111827);
+  color: #facc15;
 }
 
 .hero p {
-  color: #e5e7eb;
   max-width: 800px;
   margin: auto;
+  color: #e5e7eb;
 }
 
 /* BUTTON */
@@ -37,7 +31,7 @@ body {
   border-radius: 6px;
 }
 
-/* SECTIONS */
+/* SERVICES */
 section {
   padding: 70px 20px;
 }
@@ -46,46 +40,14 @@ h2 {
   color: #facc15;
 }
 
-/* SERVICES */
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 25px;
   max-width: 1100px;
   margin: auto;
 }
 
-.service-box {
-  background: #020617;
-  border: 1px solid #1f2937;
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.service-box img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-}
-
-.service-box h3 {
-  color: #facc15;
-  margin-top: 15px;
-}
-
-.service-box p {
-  padding: 0 15px 20px;
-  color: #d1d5db;
-}
-
-/* FOOTER */
-footer {
-  background: #020617;
-  color: #9ca3af;
-  padding: 25px;
-}
-``
-/* SERVICE IMAGE OVERLAY */
 .service-box {
   position: relative;
   background: #020617;
@@ -97,24 +59,19 @@ footer {
 
 .service-box:hover {
   transform: translateY(-6px);
-  box-shadow: 0 15px 30px rgba(250, 204, 21, 0.25);
+  box-shadow: 0 15px 30px rgba(250, 204, 21, 0.3);
 }
 
 .service-box img {
   width: 100%;
   height: 220px;
   object-fit: cover;
-  display: block;
 }
 
 .service-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0.85),
-    rgba(0, 0, 0, 0.25)
-  );
+  background: linear-gradient(to top, rgba(0,0,0,0.85), rgba(0,0,0,0.2));
   display: flex;
   align-items: flex-end;
   padding: 20px;
@@ -122,18 +79,15 @@ footer {
 
 .service-overlay h3 {
   color: #facc15;
-  font-size: 1.2rem;
   margin: 0;
 }
 
-/* ICON STYLE */
-.service-icon {
-  font-size: 32px;
-  color: #facc15;
-  margin: 20px 0 10px;
+.service-box p {
+  padding: 15px;
+  color: #d1d5db;
 }
 
-/* WHY CHOOSE US */
+/* WHY */
 .why {
   background: #000;
 }
@@ -153,8 +107,10 @@ footer {
   border-radius: 8px;
 }
 
-.why-box h3 {
-  color: #facc15;
-  margin-bottom: 10px;
+/* FOOTER */
+footer {
+  background: #020617;
+  color: #9ca3af;
+  padding: 25px;
 }
-
+``
