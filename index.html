@@ -3,11 +3,38 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Skyking Technologies Limited offers corporate ICT consulting services including networking, cybersecurity, servers, data analytics, web development, and ICT equipment supply in Kenya.">
+  <meta name="keywords" content="ICT services Kenya, networking, cybersecurity, server installation, web development, data analytics, laptop supply">
+  <meta name="author" content="Skyking Technologies Limited">
+  <meta property="og:title" content="Skyking Technologies Limited - ICT Consulting Services">
+  <meta property="og:description" content="Professional ICT solutions for businesses in Kenya.">
+  <meta property="og:image" content="images/logo.png">
+  <meta property="og:url" content="https://skykingtech.com">
   <title>Skyking Technologies Limited</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
+
+<header>
+  <nav>
+    <div class="logo">
+      <h1>Skyking Technologies</h1>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="menu-toggle" id="mobile-menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </nav>
+</header>
 
 <section class="hero">
   <h1>Skyking Technologies Limited</h1>
@@ -23,44 +50,106 @@
   </a>
 </section>
 
-<section class="services">
+<section id="about" class="about">
+  <h2>About Us</h2>
+  <p>
+    Skyking Technologies Limited is a leading provider of ICT consulting services in Kenya. With years of experience in enterprise environments, we deliver secure, reliable, and business-focused technology solutions. Our team specializes in transforming businesses through innovative ICT strategies.
+  </p>
+  <div class="about-grid">
+    <div class="about-box">
+      <h3>Our Mission</h3>
+      <p>To empower businesses with cutting-edge ICT solutions that drive growth and efficiency.</p>
+    </div>
+    <div class="about-box">
+      <h3>Our Vision</h3>
+      <p>To be the premier ICT partner for Kenyan businesses, setting standards in technology excellence.</p>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="services">
   <h2>Our Services</h2>
 
   <div class="services-grid">
 
     <div class="service-box">
       <img src="images/network.png" alt="Network Cabling">
-      <div class="service-overlay">
-        <h3>Networking & Cabling</h3>
-      </div>
+      <h3>Networking & Cabling</h3>
       <p>
-        Structured cabling, LAN/WAN setup, routing, switching,
-        and secure network infrastructure.
+        Build a robust, high-speed network with professional cabling,
+        secure routing, and seamless connectivity for uninterrupted
+        business operations.
       </p>
     </div>
 
     <div class="service-box">
       <img src="images/server-installation.png" alt="Server Installation">
-      <div class="service-overlay">
-        <h3>Server Installation</h3>
-      </div>
+      <h3>Server Installation</h3>
       <p>
-        Windows & Linux servers, virtualization, backups,
-        monitoring, and disaster recovery.
+        Deploy scalable server solutions with 24/7 monitoring, automatic
+        backups, and disaster recovery—ensuring zero downtime for your
+        critical business systems.
       </p>
     </div>
 
     <div class="service-box">
       <img src="images/desktop.png" alt="Desktop & Laptop Supply">
-      <div class="service-overlay">
-        <h3>Laptop & Desktop Supply</h3>
-      </div>
+      <h3>Laptop & Desktop Supply</h3>
       <p>
-        Supply and setup of quality laptops and desktops
-        for businesses and individuals.
+        Access quality-assured computers from trusted vendors. We handle
+        procurement, configuration, and deployment—ready for immediate
+        use by your team.
       </p>
     </div>
 
+    <div class="service-box">
+      <img src="images/cybersecurity.png" alt="Cybersecurity">
+      <h3>Cybersecurity</h3>
+      <p>
+        Protect your business from cyber threats with advanced firewalls,
+        threat detection, data encryption, and compliance management—keeping
+        your data secure.
+      </p>
+    </div>
+
+    <div class="service-box">
+      <img src="images/data-analytics.png" alt="Data Analytics">
+      <h3>Data Analytics</h3>
+      <p>
+        Transform raw data into actionable insights. Visualize trends,
+        generate detailed reports, and make smarter business decisions
+        backed by real-time data.
+      </p>
+    </div>
+
+    <div class="service-box">
+      <img src="images/web-development.png" alt="Web Development">
+      <h3>Web Development</h3>
+      <p>
+        Launch professional websites and e-commerce platforms designed
+        to attract customers, drive sales, and establish your strong
+        digital presence.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section id="testimonials" class="testimonials">
+  <h2>What Our Clients Say</h2>
+  <div class="testimonials-grid">
+    <div class="testimonial-box">
+      <p>"Skyking Technologies transformed our network infrastructure. Highly professional and reliable."</p>
+      <cite>- John Doe, CEO, TechCorp Kenya</cite>
+    </div>
+    <div class="testimonial-box">
+      <p>"Excellent server setup and ongoing support. Saved us time and money."</p>
+      <cite>- Jane Smith, IT Manager, RetailPlus</cite>
+    </div>
+    <div class="testimonial-box">
+      <p>"Their cybersecurity solutions gave us peace of mind. Highly recommended."</p>
+      <cite>- Michael Johnson, Director, FinanceHub</cite>
+    </div>
   </div>
 </section>
 
@@ -90,15 +179,55 @@
   </div>
 </section>
 
-<section class="contact">
+<section id="contact" class="contact">
   <h2>Contact Us</h2>
+  <p>Get in touch for a free consultation.</p>
+  <form action="mailto:Skykingtech26@gmail.com" method="post" enctype="text/plain" class="contact-form-wrapper">
+    <div class="form-group">
+      <label for="name">Full Name *</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email Address *</label>
+      <input type="email" id="email" name="email" placeholder="your@email.com" required>
+    </div>
+    <div class="form-group">
+      <label for="message">Message *</label>
+      <textarea id="message" name="message" placeholder="Tell us about your ICT needs..." required></textarea>
+    </div>
+    <button type="submit" class="btn">Send Message</button>
+  </form>
+  <p>Or reach us directly:</p>
   <p>📞 +254 723 539 031</p>
   <p>📧 Skykingtech26@gmail.com</p>
+  <div class="social-links">
+    <a href="https://linkedin.com/company/skyking-technologies" target="_blank">LinkedIn</a>
+    <a href="https://wa.me/254723539031?text=Hello%20Skyking%20Technologies%20Ltd.%20I%20need%20ICT%20services." target="_blank">WhatsApp</a>
+  </div>
 </section>
 
 <footer>
   © 2026 Skyking Technologies Limited. All rights reserved.
 </footer>
+
+<script>
+  // Mobile menu toggle
+  const mobileMenu = document.getElementById('mobile-menu');
+  const navLinks = document.querySelector('.nav-links');
+  mobileMenu.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+
+  // Smooth scrolling
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+</script>
 
 </body>
 </html>
