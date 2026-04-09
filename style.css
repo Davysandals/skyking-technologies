@@ -26,6 +26,17 @@ nav {
   margin: auto;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+}
+
 .logo h1 {
   color: #facc15;
   margin: 0;
